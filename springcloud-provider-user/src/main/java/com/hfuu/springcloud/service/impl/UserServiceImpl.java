@@ -16,4 +16,9 @@ public class UserServiceImpl implements UserService {
     public List<User> list() {
         return userMapper.list();
     }
+
+    @Override
+    public User getBtId(Integer id) {
+        return userMapper.getBtId(id);
+    }
 }

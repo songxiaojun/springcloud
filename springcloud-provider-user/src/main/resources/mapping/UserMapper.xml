@@ -7,4 +7,7 @@
         SELECT * FROM user
     </select>
 
+    <select id="getBtId" resultType="com.hfuu.springcloud.entity.User" parameterType="int">
+        SELECT * FROM user WHERE id=#{id}
+    </select>
 </mapper>

@@ -4,10 +4,7 @@ import com.hfuu.springcloud.entity.User;
 import com.hfuu.springcloud.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -21,5 +18,12 @@ public class UserController {
     public List<User> list(){
         List<User> list = userService.list();
         return list;
+    }
+
+    @GetMapping("/getById/{id}")
+    @ResponseBody
+    public User getById(@PathVariable Integer id){
+        User user = userService.getBtId(id);
+        return user;
     }
 }
