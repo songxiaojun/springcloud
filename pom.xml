@@ -15,6 +15,7 @@
     <module>springcloud-consumer-movie</module>
     <module>springcloud-provider-user</module>
     <module>springcloud-entity</module>
+    <module>springcloud-discovery-eureka</module>
   </modules>
 
 
