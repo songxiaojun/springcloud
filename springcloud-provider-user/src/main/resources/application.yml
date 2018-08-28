@@ -9,6 +9,8 @@ spring:
     username: root
     password: 12345678
     driver-class-name: com.mysql.jdbc.Driver
+  application:
+    name: springcloud-provider-user    #eureka client 中 application名字
 
 logging:
   level:
@@ -21,3 +23,6 @@ eureka:
   client:
     service-url:
       defaultZone: http://user:password123@localhost:8761/eureka
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
