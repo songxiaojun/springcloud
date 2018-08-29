@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.hfuu.springcloud</groupId>
-	<artifactId>springcloud-discovery-eureka</artifactId>
+	<artifactId>springcloud-eureka-8762</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
@@ -13,12 +13,6 @@
 		<artifactId>springcloud</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-
-
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	</properties>
-
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
@@ -50,6 +44,5 @@
 			<version>1.1.1</version>
 		</dependency>
 	</dependencies>
-
 
 </project>

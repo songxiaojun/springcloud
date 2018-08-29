@@ -16,8 +16,10 @@
     <module>springcloud-consumer-movie</module>
     <module>springcloud-provider-user</module>
     <module>springcloud-entity</module>
-    <module>springcloud-discovery-eureka</module>
     <module>springcloud-consumer-movie-ribbon</module>
+    <module>springcloud-eureka-8761</module>
+    <module>springcloud-eureka-8762</module>
+    <module>springcloud-eureka-8763</module>
   </modules>
 
 
