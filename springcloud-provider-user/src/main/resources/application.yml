@@ -1,8 +1,9 @@
 server:
   port: 7900
 mybatis:
-  mapper-locations: classpath:mapping/*.xml
+  mapper-locations: classpath:mybatis/mapper/*.xml
   type-aliases-package: com.hfuu.springcloud.entity
+  config-location: classpath:mybatis/mybatis.cfg.xml
 spring:
   datasource:
     url: jdbc:mysql://111.230.131.178:3306/springcloud
