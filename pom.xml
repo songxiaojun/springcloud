@@ -12,6 +12,7 @@
 
 
   <modules>
+    <module>springcloud-api</module>
     <module>springcloud-consumer-movie</module>
     <module>springcloud-provider-user</module>
     <module>springcloud-entity</module>
