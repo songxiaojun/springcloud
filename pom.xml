@@ -19,7 +19,7 @@
     <module>springcloud-consumer-movie-ribbon</module>
     <module>springcloud-eureka-8761</module>
     <module>springcloud-eureka-8762</module>
-    <module>springcloud-eureka-8763</module>
+
   </modules>
 
 
