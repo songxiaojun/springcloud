@@ -1,4 +1,4 @@
-security:
+ security:
   basic:
     enabled: true
   user:
