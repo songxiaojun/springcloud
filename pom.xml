@@ -9,8 +9,6 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>springcloud</name>
-
-
   <modules>
     <module>springcloud-common</module>
     <module>springcloud-provider-user</module>
