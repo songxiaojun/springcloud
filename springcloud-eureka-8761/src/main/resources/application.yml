@@ -4,9 +4,9 @@
   user:
     name: user
     password: password123
-server:
+ server:
   port: 8761
-eureka:
+ eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
