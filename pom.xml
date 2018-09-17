@@ -12,15 +12,13 @@
 
 
   <modules>
+    <module>springcloud-common</module>
     <module>springcloud-provider-user</module>
     <module>springcloud-entity</module>
     <module>springcloud-consumer-movie-ribbon</module>
     <module>springcloud-eureka-8761</module>
     <module>springcloud-eureka-8762</module>
-
   </modules>
-
-
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
@@ -31,9 +29,6 @@
     <druid.version>1.0.31</druid.version>
     <mysql.version>5.0.4</mysql.version>
   </properties>
-
-
-
   <dependencyManagement>
     <dependencies>
       <dependency>
