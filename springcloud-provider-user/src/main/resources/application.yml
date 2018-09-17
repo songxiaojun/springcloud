@@ -6,9 +6,9 @@ mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml
 spring:
   datasource:
-    url: jdbc:mysql://111.230.131.178:3306/springcloud
+    url: jdbc:mysql://47.99.100.40:3306/springcloud
     username: root
-    password: 12345678
+    password: 123456
     driver-class-name: com.mysql.jdbc.Driver
   application:
     name: springcloud-provider-user    #eureka client 中 application名字
