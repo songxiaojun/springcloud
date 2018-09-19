@@ -19,6 +19,11 @@
 			<artifactId>spring-cloud-starter-eureka-server</artifactId>
 		</dependency>
 		<dependency>
+			<groupId>com.hfuu.springcloud</groupId>
+			<artifactId>springcloud-common</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
