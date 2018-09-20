@@ -9,8 +9,6 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>springcloud</name>
-
-
   <modules>
     <module>springcloud-common</module>
     <module>springcloud-provider-user</module>
@@ -28,6 +26,8 @@
     <lombok.version>1.16.18</lombok.version>
     <druid.version>1.0.31</druid.version>
     <mysql.version>5.0.4</mysql.version>
+    <spring-boot-version>1.5.9.RELEASE</spring-boot-version>
+
   </properties>
   <dependencyManagement>
     <dependencies>
@@ -41,7 +41,7 @@
       <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-dependencies</artifactId>
-        <version>1.5.9.RELEASE</version>
+        <version>${spring-boot-version}</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -54,11 +54,6 @@
         <groupId>com.alibaba</groupId>
         <artifactId>druid</artifactId>
         <version>${druid.version}}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.mybatis.spring.boot</groupId>
-        <artifactId>mybatis-spring-boot-starter</artifactId>
-        <version>1.2.2</version>
       </dependency>
 
       <dependency>
@@ -78,6 +73,7 @@
         <version>${log4j.version}</version>
       </dependency>
     </dependencies>
+
   </dependencyManagement>
 
   <build>
