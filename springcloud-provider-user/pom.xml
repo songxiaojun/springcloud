@@ -12,11 +12,6 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<dependencies>
-		<dependency>
-			<groupId>com.hfuu.springcloud</groupId>
-			<artifactId>springcloud-entity</artifactId>
-			<version>${project.version}</version>
-		</dependency>
 
 		<dependency>
 			<groupId>com.hfuu.springcloud</groupId>

@@ -17,11 +17,7 @@
 
 
 	<dependencies>
-		<dependency>
-			<groupId>com.hfuu.springcloud</groupId>
-			<artifactId>springcloud-entity</artifactId>
-			<version>${project.version}</version>
-		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>

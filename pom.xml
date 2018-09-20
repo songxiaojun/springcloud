@@ -12,7 +12,6 @@
   <modules>
     <module>springcloud-common</module>
     <module>springcloud-provider-user</module>
-    <module>springcloud-entity</module>
     <module>springcloud-consumer-movie-ribbon</module>
     <module>springcloud-eureka-8761</module>
     <module>springcloud-eureka-8762</module>
