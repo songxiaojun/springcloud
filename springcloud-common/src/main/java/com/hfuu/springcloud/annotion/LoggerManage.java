@@ -1,4 +1,4 @@
-package com.hfuu.springcloud.aops;
+package com.hfuu.springcloud.annotion;
 
 import java.lang.annotation.*;
 

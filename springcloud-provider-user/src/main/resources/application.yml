@@ -13,13 +13,6 @@ spring:
   application:
     name: springcloud-provider-user    #eureka client 中 application名字
 
-logging:
-  level:
-    root: INFO
-    org.hibernate: INFO
-    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
-    org.hibernate.type.descriptor.sql.BasicExtractor: TRACE
-    com.hfuu.springcloud: DEBUG
 eureka:
   client:
     service-url:
