@@ -6,7 +6,7 @@
 	<groupId>com.hfuu.springcloud</groupId>
 	<artifactId>springcloud-eureka-8761</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<parent>
 		<groupId>com.hfuu.springcloud</groupId>
 		<artifactId>springcloud</artifactId>

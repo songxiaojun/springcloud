@@ -16,6 +16,7 @@ public class UserController {
     @GetMapping("/list")
     @ResponseBody
     public List<User> list(){
+
         List<User> list = userService.list();
         return list;
     }
