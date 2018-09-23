@@ -13,13 +13,6 @@ import java.util.List;
 public class UserController {
     @Autowired
     private UserService userService;
-    @GetMapping("/list")
-    @ResponseBody
-    public List<User> list(){
-
-        List<User> list = userService.list();
-        return list;
-    }
 
     @GetMapping("/getById/{id}")
     @HystrixCommand(fallbackMethod = "processHystrix_Get")
