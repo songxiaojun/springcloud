@@ -13,6 +13,7 @@
     <module>springcloud-common</module>
     <module>springcloud-provider-user</module>
     <module>springcloud-provider-user-7901</module>
+    <module>springcloud-provider-user-hystrix-7902</module>
     <module>springcloud-consumer-movie-ribbon</module>
     <module>springcloud-eureka-8761</module>
     <module>springcloud-eureka-8762</module>
