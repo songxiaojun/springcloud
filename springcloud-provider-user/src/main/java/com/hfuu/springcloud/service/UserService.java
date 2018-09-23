@@ -8,5 +8,5 @@ import java.util.List;
 public interface UserService {
     List<User> list();
 
-    User getBtId(Integer id);
+    User getById(Integer id);
 }
