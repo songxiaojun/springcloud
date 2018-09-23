@@ -1,5 +1,5 @@
 server:
-  port: 7901
+  port: 7902
 mybatis:
   mapper-locations: classpath:mybatis/mapper/*.xml
   type-aliases-package: com.hfuu.springcloud.entity
@@ -20,3 +20,8 @@ eureka:
   instance:
     prefer-ip-address: true
     instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
+info:
+  app.name: springcloud-provider-user
+  company.name: sj
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
