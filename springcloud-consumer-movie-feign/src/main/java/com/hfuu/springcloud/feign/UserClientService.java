@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @FeignClient(value = "SPRINGCLOUD-PROVIDER-USER")
 public interface UserClientService {
-    @RequestMapping(value = "/movie/getById/{id}",method = RequestMethod.GET)
+    @RequestMapping(value = "/user/getById/{id}",method = RequestMethod.GET)
     @ResponseBody
     public User getById(@PathVariable("id") Integer id);// 两个坑：1. @GetMapping不支持   2. @PathVariable得设置value
 }
