@@ -13,7 +13,6 @@ eureka:
 
 
 zuul:
-  #ignored-services
   prefix: /hfuu
   ignored-services: "*"
   routes:
