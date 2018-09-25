@@ -12,7 +12,7 @@ public class MovieController {
 
     @RequestMapping(value = "/movie/getById/{id}",method = RequestMethod.GET)
     @ResponseBody
-    public User findById(@PathVariable("id") Long id) {
+    public User findById(@PathVariable("id") Integer id) {
         User user = userClientService.getById(id);
         return user;
     }
