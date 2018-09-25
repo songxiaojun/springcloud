@@ -21,9 +21,10 @@ public class UserController {
         return list;
     }
 
-    @GetMapping("/getById/{id}")
+
+    @RequestMapping(value = "/getById/{id}", method = RequestMethod.GET)
     @ResponseBody
-    public User getById(@PathVariable Integer id){
+    public User getById(@PathVariable("id") Integer id){
         User user = userService.getById(id);
         return user;
     }
