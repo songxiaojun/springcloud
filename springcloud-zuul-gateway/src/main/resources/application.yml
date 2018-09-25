@@ -1,0 +1,27 @@
+server:
+  port: 9527
+spring:
+  application:
+    name: springcloud-zuul-gateway
+eureka:
+  client:
+    service-url:
+      defaultZone: http://user:password123@localhost:8761/eureka
+  instance:
+    instance-id: gateway-9527.com
+    prefer-ip-address: true
+
+
+zuul:
+  #ignored-services: microservicecloud-dept
+  prefix: /hfuu
+  ignored-services: "*"
+  routes:
+    mydept.serviceId: springcloud-provider-user
+    mydept.path: /user/**
+
+info:
+  app.name: springcloud
+  company.name: songxiaojun
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
