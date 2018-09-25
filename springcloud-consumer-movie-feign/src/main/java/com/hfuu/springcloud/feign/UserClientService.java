@@ -11,5 +11,5 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public interface UserClientService {
     @RequestMapping(value = "/movie/getById/{id}",method = RequestMethod.GET)
     @ResponseBody
-    public User getById(@PathVariable("id") Long id);// 两个坑：1. @GetMapping不支持   2. @PathVariable得设置value
+    public User getById(@PathVariable("id") Integer id);// 两个坑：1. @GetMapping不支持   2. @PathVariable得设置value
 }
