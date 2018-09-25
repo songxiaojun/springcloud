@@ -1,5 +1,5 @@
 server:
-  port: 7901
+  port: 7903
 spring:
   application:
     name: springcloud-consumer-movie
@@ -10,3 +10,4 @@ eureka:
   instance:
     prefer-ip-address: true
     instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 5000
