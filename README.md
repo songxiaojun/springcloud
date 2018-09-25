@@ -15,10 +15,10 @@ springcloud
    | -- springcloud-common  公共组件: 提供一系列工具类或方法
    | -- springcloud-consumer-movie  消费者
    | -- springcloud-consumer-movie-ribbon 消费者使用ribbon服务
-   | -- springcloud-entity 实体
    | -- springcloud-eureka-8761 eureka的服务注册中心：eureka-server 端口号为8761
    | -- springcloud-eureka-8762 eureka的服务注册中心：eureka-server 端口号为8762
    | -- springcloud-provide-user user服务提供者
+   | -- springcloud-provide-user-7901 服务提供者集群
 ```
 ~~~
 
