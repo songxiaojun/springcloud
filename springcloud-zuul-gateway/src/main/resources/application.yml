@@ -13,7 +13,6 @@ eureka:
 
 
 zuul:
-  #ignored-services: microservicecloud-dept
   prefix: /hfuu
   ignored-services: "*"
   routes:
