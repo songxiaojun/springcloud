@@ -36,7 +36,7 @@ public class LoggerAdvice {
 
 
 
-    @Pointcut("execution(public * com.hfuu.springcloud.*.controller.*.*(..))")
+    @Pointcut("execution(* com.hfuu.springcloud..*.*(..))")
     public void serviceAspect(){
 
     }
