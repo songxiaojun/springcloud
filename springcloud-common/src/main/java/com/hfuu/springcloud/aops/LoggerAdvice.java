@@ -3,6 +3,7 @@ package com.hfuu.springcloud.aops;
 
 import com.hfuu.springcloud.annotion.LoggerManage;
 import com.hfuu.springcloud.entity.LogEntity;
+import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.AfterReturning;
 import org.aspectj.lang.annotation.Aspect;
@@ -23,10 +24,11 @@ import java.util.Enumeration;
 /**
  * 日志管理 AOP
  */
+
 @Aspect
 @Component
 public class LoggerAdvice {
-    private Logger logger =  LoggerFactory.getLogger(this.getClass());
+    private Logger log =  LoggerFactory.getLogger(this.getClass());
     ThreadLocal<Long> startTime = new ThreadLocal<>();
     ThreadLocal<LogEntity> webLogThreadLocal = new ThreadLocal<>();
 
@@ -42,7 +44,7 @@ public class LoggerAdvice {
     @Before("serviceAspect()&& @annotation(loggerManage)")
     public void doBefore(JoinPoint joinPoint,LoggerManage loggerManage){
         // 接收到请求，记录请求内容
-        logger.info("执行: ==> [{}] 开始", loggerManage.description());
+        log.info("执行: ==> [{}] 开始", loggerManage.description());
 
         ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
 
@@ -50,15 +52,15 @@ public class LoggerAdvice {
 
         // 记录下请求内容
 
-        logger.info("URL : " + request.getRequestURL().toString());
+        log.info("URL : " + request.getRequestURL().toString());
 
-        logger.info("HTTP_METHOD : " + request.getMethod());
+        log.info("HTTP_METHOD : " + request.getMethod());
 
-        logger.info("IP : " + request.getRemoteAddr());
+        log.info("IP : " + request.getRemoteAddr());
 
-        logger.info("CLASS_METHOD : " + joinPoint.getSignature().getDeclaringTypeName() + "." + joinPoint.getSignature().getName());
+        log.info("CLASS_METHOD : " + joinPoint.getSignature().getDeclaringTypeName() + "." + joinPoint.getSignature().getName());
 
-        logger.info("ARGS : " + Arrays.toString(joinPoint.getArgs()));
+        log.info("ARGS : " + Arrays.toString(joinPoint.getArgs()));
 
         //获取所有参数方法一：
 
@@ -75,7 +77,7 @@ public class LoggerAdvice {
 
     @AfterReturning(value = "serviceAspect()&& @annotation(loggerManage)")
     public void addAfterReturningLogger(JoinPoint joinPoint, LoggerManage loggerManage) {
-        logger.info("执行: ==> [{}] 结束", loggerManage.description());
+        log.info("执行: ==> [{}] 结束", loggerManage.description());
     }
 
 }
