@@ -21,7 +21,7 @@
 | springcloud-provide-user              | 7900 | user服务提供者                   |
 | springcloud-provide-user-7901         | 7901 | user服务提供者                   |
 | springcloud-provide-user-hystrix-7902 | 7902 | 服务熔断                         |
-| springcloud-zuul-gateway              | 7527 | 网关                             |
+| springcloud-zuul-gateway              | 7527 | 网关                            |
 
 
 
