@@ -32,10 +32,6 @@ public class LoggerAdvice {
     ThreadLocal<Long> startTime = new ThreadLocal<>();
     ThreadLocal<LogEntity> webLogThreadLocal = new ThreadLocal<>();
 
-
-
-
-
     @Pointcut("execution(* com.hfuu.springcloud..*.*(..))")
     public void serviceAspect(){
 
