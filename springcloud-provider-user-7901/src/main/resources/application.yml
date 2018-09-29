@@ -12,7 +12,6 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
   application:
     name: springcloud-provider-user    #eureka client 中 application名字
-
 eureka:
   client:
     service-url:

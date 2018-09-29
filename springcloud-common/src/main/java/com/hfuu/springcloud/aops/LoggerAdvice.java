@@ -37,7 +37,7 @@ public class LoggerAdvice {
 
     }
 
-    @Before("serviceAspect()&& @annotation(loggerManage)")
+    @Before("serviceAspect()|| @annotation(loggerManage)")
     public void doBefore(JoinPoint joinPoint,LoggerManage loggerManage){
         // 接收到请求，记录请求内容
         log.info("执行: ==> [{}] 开始", loggerManage.description());
@@ -71,7 +71,7 @@ public class LoggerAdvice {
         }
     }
 
-    @AfterReturning(value = "serviceAspect()&& @annotation(loggerManage)")
+    @AfterReturning(value = "serviceAspect()|| @annotation(loggerManage)")
     public void addAfterReturningLogger(JoinPoint joinPoint, LoggerManage loggerManage) {
         log.info("执行: ==> [{}] 结束", loggerManage.description());
     }
