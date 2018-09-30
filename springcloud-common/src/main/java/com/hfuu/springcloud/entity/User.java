@@ -19,4 +19,5 @@ public class User implements Serializable{
     private String name;
     private Integer age;
     private String dbSource;//来自哪个数据库
+    private String password;
 }
