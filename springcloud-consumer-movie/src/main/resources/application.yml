@@ -1,5 +1,5 @@
 server:
-  port: 7901
+  port: 7801
 spring:
   application:
     name: springcloud-consumer-movie

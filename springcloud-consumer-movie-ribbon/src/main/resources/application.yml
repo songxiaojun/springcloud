@@ -1,5 +1,5 @@
 server:
-  port: 7902
+  port: 7802
 spring:
   application:
     name: springcloud-consumer-movie-ribbon
