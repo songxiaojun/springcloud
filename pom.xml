@@ -46,26 +46,9 @@
         <scope>import</scope>
       </dependency>
       <dependency>
-        <groupId>mysql</groupId>
-        <artifactId>mysql-connector-java</artifactId>
-        <version>${mysql.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.alibaba</groupId>
-        <artifactId>druid</artifactId>
-        <version>${druid.version}}</version>
-      </dependency>
-
-      <dependency>
         <groupId>ch.qos.logback</groupId>
         <artifactId>logback-core</artifactId>
         <version>1.2.3</version>
-      </dependency>
-      <dependency>
-        <groupId>junit</groupId>
-        <artifactId>junit</artifactId>
-        <version>${junit.version}</version>
-        <scope>test</scope>
       </dependency>
     </dependencies>
   </dependencyManagement>

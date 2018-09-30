@@ -1,5 +1,6 @@
 package com.hfuu.springcloud.controller;
 
+import com.hfuu.springcloud.annotion.LoggerManage;
 import com.hfuu.springcloud.entity.User;
 import com.hfuu.springcloud.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,6 +24,7 @@ public class UserController {
 
     @RequestMapping(value = "/getById/{id}", method = RequestMethod.GET)
     @ResponseBody
+    @LoggerManage(description = "测试")
     public User getById(@PathVariable("id") Integer id){
         User user = userService.getById(id);
         return user;
