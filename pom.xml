@@ -18,6 +18,7 @@
     <module>springcloud-eureka-8762</module>
     <module>springcloud-consumer-movie</module>
     <module>springcloud-zuul-gateway</module>
+    <module>springcloud-sso</module>
 
   </modules>
   <properties>
