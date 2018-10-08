@@ -19,7 +19,7 @@
     <module>springcloud-consumer-movie</module>
     <module>springcloud-zuul-gateway</module>
     <module>springcloud-sso</module>
-
+    <module>springcloud-task</module>
   </modules>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
