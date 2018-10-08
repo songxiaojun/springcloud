@@ -22,6 +22,8 @@
 | springcloud-provide-user-7901         | 7901 | user服务提供者                   |
 | springcloud-provide-user-hystrix-7902 | 7902 | 服务熔断                         |
 | springcloud-zuul-gateway              | 7527 | 网关                            |
+| springcloud-sso |  | 单点登录模块 |
+| springcloud-task |  | 定时任务模块 |
 
 
 
