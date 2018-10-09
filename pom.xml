@@ -30,7 +30,7 @@
     <druid.version>1.0.31</druid.version>
     <mysql.version>5.0.4</mysql.version>
     <spring-boot-version>1.5.9.RELEASE</spring-boot-version>
-
+    <xxl-job-version>1.9.0</xxl-job-version>
   </properties>
   <dependencyManagement>
     <dependencies>
