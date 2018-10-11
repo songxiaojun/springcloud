@@ -11,8 +11,7 @@
     <module>springcloud-common</module>
     <module>springcloud-consumer-movie-ribbon</module>
     <module>springcloud-consumer-movie-feign</module>
-    <module>springcloud-eureka-8761</module>
-    <module>springcloud-eureka-8762</module>
+    <module>springcloud-eureka</module>
     <module>springcloud-consumer-movie</module>
     <module>springcloud-zuul-gateway</module>
     <module>springcloud-sso</module>
