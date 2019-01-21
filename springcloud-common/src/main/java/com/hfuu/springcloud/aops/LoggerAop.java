@@ -27,7 +27,7 @@ import java.util.Enumeration;
 
 @Aspect
 @Component
-public class LoggerAdvice {
+public class LoggerAop {
     private Logger log =  LoggerFactory.getLogger(this.getClass());
     ThreadLocal<Long> startTime = new ThreadLocal<>();
     ThreadLocal<LogEntity> webLogThreadLocal = new ThreadLocal<>();
